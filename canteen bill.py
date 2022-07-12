@@ -40,8 +40,16 @@ print ("Total: " + str(rate_2*quantity_2))
 
 print (" ")
 
+grand_total = (rate_1*quantity_1)+(rate_2*quantity_2)
+grand_total_str = str((rate_1*quantity_1)+(rate_2*quantity_2))
+gst = (grand_total * 18)/100
+discount =  (grand_total * 4)/100
+
+print ("GST: " +  str(gst))
+print ("Discount: " + str(discount))
+
 print ("________________________")
 
-print ("Grand total: " + str((rate_1*quantity_1)+(rate_2*quantity_2)))
+print ("Grand total: " + str(float((grand_total+gst)-discount)))
 
 print ("________________________")
